@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("../bilder/images\ \(1\).jpeg"); /* din bildväg */
+  background-size: cover;         /* bilden täcker hela skärmen */
+  background-repeat: no-repeat;   /* upprepa inte */
+  background-position: center;    /* centrera bilden */
+  min-height: 100vh;              /* minst hela skärmhöjden */
+  margin: 0;
+  padding: 0;
+}
+
+/* Huvudinnehåll */
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  background:none;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow:none;
+}
+
+/* Rubrik */
+h1 {
+  text-align: center;
+  background: linear-gradient(to right, navy 0%, green 100% );
+  color: transparent;
+  background-clip:text;
+}
+
+/* Formulär */
+form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Gästlistan */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+}
+
+/* Ta bort-knapp */
+li button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background-color: #b52a37;
+}
+
+/* Feedback-meddelande */
+#feedback {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.alert-success {
+  color: green;
+}
+
+.alert-danger {
+  color: red;
+}
+
+.alert-warning {
+  color: orange;
+}
