@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-image: url("../bilder/images\ \(1\).jpeg"); /* din bildväg */
+  background-image: url("../bilder/bild3.jpg"); /* din bildväg */
   background-size: cover;         /* bilden täcker hela skärmen */
   background-repeat: no-repeat;   /* upprepa inte */
   background-position: center;    /* centrera bilden */
@@ -21,8 +21,11 @@ body {
 
 /* Rubrik */
 h1 {
+  font-weight: 900;
+  font-size: 48px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); 
   text-align: center;
-  background: linear-gradient(to right, navy 0%, green 100% );
+  background: linear-gradient(to right, rgb(156, 17, 54) 30%, rgb(17, 197, 217) 70% );
   color: transparent;
   background-clip:text;
 }
@@ -94,7 +97,7 @@ li button:hover {
 }
 
 .alert-success {
-  color: green;
+  color: rgb(70, 128, 0);
 }
 
 .alert-danger {
@@ -103,4 +106,19 @@ li button:hover {
 
 .alert-warning {
   color: orange;
+}
+/*För mobilanpassning*/
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
+  }
 }
