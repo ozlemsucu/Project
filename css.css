@@ -1,7 +1,7 @@
 /* Mörk helskärm med vit text */
 body {
     font-family: Arial, sans-serif;
-    background-image: url("../bilder/images\ \(1\).jpeg");
+    background-image: url("../Bilder/bild.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
